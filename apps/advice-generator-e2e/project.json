@@ -1,0 +1,28 @@
+{
+  "root": "apps/advice-generator-e2e",
+  "sourceRoot": "apps/advice-generator-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/advice-generator-e2e/cypress.json",
+        "devServerTarget": "advice-generator:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "advice-generator:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/advice-generator-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["advice-generator"]
+}

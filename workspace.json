@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "advice-generator": "apps/advice-generator",
+    "advice-generator-e2e": "apps/advice-generator-e2e"
+  }
+}
