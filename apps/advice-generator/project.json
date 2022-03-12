@@ -43,7 +43,7 @@
     "serve": {
       "executor": "@nrwl/web:dev-server",
       "options": {
-        "buildTarget": "advice-generator:build",
+        "buildTarget": "advice-generator:build:development",
         "hmr": true
       },
       "configurations": {
